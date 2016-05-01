@@ -28,7 +28,6 @@ var running = 0;
  * @param {number} b
  * @return {?}
  */
-document.querySelector("div.btnt.nsi.sadg1").click();
 function setChoosed(dataAndEvents, b) {
   if (!playing) {
     return false;
