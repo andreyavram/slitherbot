@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Slither.io Bot
-// @namespace    SlitherIO
+// @namespace    slitherbot
 // @version      0.1
 // @description  Slither.io Bot
 // @author       Oliver Ni
