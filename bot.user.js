@@ -28,6 +28,7 @@ var running = 0;
  * @param {number} b
  * @return {?}
  */
+document.getElementsByClassName("nsi")[0].click();
 function setChoosed(dataAndEvents, b) {
   if (!playing) {
     return false;
@@ -123,74 +124,6 @@ var mpd;
    * @return {undefined}
    */
   function init() {
-    if (!viewsEnabled) {
-      /** @type {boolean} */
-      testing = debugMode;
-      if (testing) {
-        /** @type {Element} */
-        pfd = document.createElement("div");
-        /** @type {string} */
-        pfd.style.position = "fixed";
-        /** @type {string} */
-        pfd.style.left = "4px";
-        /** @type {string} */
-        pfd.style.bottom = "30px";
-        /** @type {string} */
-        pfd.style.width = "170px";
-        /** @type {string} */
-        pfd.style.height = "364px";
-        /** @type {string} */
-        pfd.style.background = "rgba(0, 0, 0, .8)";
-        /** @type {string} */
-        pfd.style.color = "#80FF80";
-        /** @type {string} */
-        pfd.style.fontFamily = "Verdana";
-        /** @type {number} */
-        pfd.style.zIndex = 999999;
-        /** @type {string} */
-        pfd.style.fontSize = "11px";
-        /** @type {string} */
-        pfd.style.padding = "10px";
-        /** @type {string} */
-        pfd.style.borderRadius = "30px";
-        /** @type {string} */
-        pfd.textContent = "ayy lmao";
-        document.body.appendChild(pfd);
-      }
-      if (viewMap) {
-        /** @type {Element} */
-        mpd = document.createElement("div");
-        /** @type {string} */
-        mpd.style.position = "fixed";
-        /** @type {string} */
-        mpd.style.right = "10px";
-        /** @type {string} */
-        mpd.style.bottom = "30px";
-        /** @type {string} */
-        mpd.style.width = "750px";
-        /** @type {string} */
-        mpd.style.height = "690x";
-        /** @type {string} */
-        mpd.style.background = "rgba(0, 0, 0, .8)";
-        /** @type {string} */
-        mpd.style.color = "#80FF80";
-        /** @type {string} */
-        mpd.style.fontFamily = "Courier";
-        /** @type {number} */
-        mpd.style.zIndex = 999999;
-        /** @type {string} */
-        mpd.style.fontSize = "11px";
-        /** @type {string} */
-        mpd.style.padding = "10px";
-        /** @type {string} */
-        mpd.style.borderRadius = "30px";
-        /** @type {string} */
-        mpd.textContent = "ayy lmao";
-        document.body.appendChild(mpd);
-      }
-      /** @type {boolean} */
-      viewsEnabled = true;
-    }
     /** @type {Array} */
     map = new Array(i);
     /** @type {number} */
