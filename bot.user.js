@@ -247,7 +247,7 @@ function __onEat() {
             };
         };
         function spawn() {
-            if (!window.playing) {
+            if (!playing) {
                 self.connect();
             }
         }
