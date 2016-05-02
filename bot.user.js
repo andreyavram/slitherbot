@@ -214,7 +214,7 @@ function __onEat() {
                         /** @type {string} */
                         s.type = s === snake ? "O" : "s";
                         s.pts.forEach(function(af, dataAndEvents, deepDataAndEvents) {
-                            if (af.da < 0.15 && s !== snake) {
+                            if (af.da < 0.2 && s !== snake) {
                                 callback(snake.xx, snake.yy, af.xx, af.yy, s);
                             }
                         });
